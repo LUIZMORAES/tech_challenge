@@ -1,0 +1,276 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --cinza:#4a5568;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../_img/sistema/airplane-sunset.jpg');
+    height:600px;
+    background-size:cover;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.filme-principal .titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+    text-decoration:aliceblue;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botao a{
+    text-decoration:none;
+    color:#AAA;
+
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:10px;
+}
+
+footer {
+    clear:both; /*posicionando o rodape abaixo das outras divs*/
+    /*background:forestgreen;*/
+    padding: 5px;
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+}
+
+footer .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-1 {
+    text-align: center;
+    float: left;
+    width: 650px;
+    height: 420px;
+    background: #2d3748;
+    padding: 5px;
+    display: block;
+
+}
+
+.conteudo-2 {
+    text-indent: 40px;
+    letter-spacing: 3px;
+
+}
+
+.conteudo-2 p {
+    margin: 40px;
+    
+}
+
+.conteudo-2 a {
+    margin: 40px;
+}
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    color: honeydew;
+}
+
+.label-float input{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    min-width: 250px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance:none;
+}
+
+.label-float input:focus{
+    border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+    color:transparent;
+}
+
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: #2d3748;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label{
+    color: red;
+}
+.label-float input:focus:required:invalid{
+    border: 2px solid red;
+}
+
+.button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 10px;
+    opacity: 1;
+    transition: 0s
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+.hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

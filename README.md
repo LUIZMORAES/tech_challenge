@@ -8,7 +8,9 @@ O tempo sugerido para conclusão do desafio é de três dias, porém, o mesmo po
 
 Quando sua implementação  estiver concluída você deverá encaminhar para o e-mail `ti@emsventura.com.br` o link do seu repositório do Github para que nosso time possa analisar seu código e encaminhar um feedback.
 
-Bom desafio!
+Segue desafio pronto para analise!
+
+Luiz Moraes
 
 <p align="left">
     <img src="https://media.tenor.com/images/e588a5b3f8d37ab8e29631e43e775a0e/tenor.gif" height="165" width="220">
